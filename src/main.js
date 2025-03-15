@@ -33,6 +33,7 @@ form.addEventListener("submit", async (e) => {
 function addMessage(message) {
   const el = document.createElement("p");
   el.classList.add("msg");
+  el.classList.add(message.role);
   el.textContent = message.content;
   if (message.role === "user") {
     el.style.marginLeft = "auto";

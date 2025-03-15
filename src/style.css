@@ -1,3 +1,7 @@
+:root {
+    font-family: system-ui, sans-serif;
+}
+
 #app {
     max-width: 60ch;
     margin: auto;
@@ -8,7 +12,24 @@
     flex-direction: column;
 
     .msg {
+        --border-radius: 0.5em;
         width: fit-content;
+
+        padding: 0.25em 0.5em;
+        border-radius: var(--border-radius);
+
+        &.user {
+            background: #1086ff;
+            color: white;
+            border-radius: var(--border-radius) var(--border-radius) 0
+                var(--border-radius);
+        }
+
+        &.assistant {
+            background: #e9e9eb;
+            border-radius: var(--border-radius) var(--border-radius)
+                var(--border-radius) 0;
+        }
     }
 }
 
