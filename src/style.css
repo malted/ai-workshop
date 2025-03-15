@@ -1,0 +1,22 @@
+#app {
+    max-width: 60ch;
+    margin: auto;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+
+    .msg {
+        width: fit-content;
+    }
+}
+
+form {
+    display: flex;
+    gap: 1rem;
+
+    input[type="text"] {
+        flex-grow: 1;
+    }
+}
